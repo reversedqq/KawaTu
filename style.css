@@ -1,116 +1,116 @@
 /* Основні кольори */
 :root {
-  --bg-main: #FFF1E7;
-  --bg-light: #FFF5E7;
-  --accent: #4b3621;
-  --text-dark: #333;
+	--bg-main: #FFF1E7;
+	--bg-light: #FFF5E7;
+	--accent: #4b3621;
+	--text-dark: #333;
 }
 
 /* Скидання */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 html {
-  scroll-behavior: smooth;
+	scroll-behavior: smooth;
 }
 
 body {
-  font-family: 'Segoe UI', sans-serif;
-  background-color: var(--bg-main);
-  color: var(--text-dark);
-  line-height: 1.6;
+	font-family: 'Segoe UI', sans-serif;
+	background-color: var(--bg-main);
+	color: var(--text-dark);
+	line-height: 1.6;
 }
 
 /* Шапка */
 header {
-  background-color: var(--accent);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1.2rem 2rem;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  margin-bottom: 20px;
+	background-color: var(--accent);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1.2rem 2rem;
+	position: sticky;
+	top: 0;
+	z-index: 1000;
+	box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+	margin-bottom: 20px;
 }
 
 .logo {
-  font-size: 1.8rem;
-  font-weight: bold;
-  color: #ffffff;
+	font-size: 1.8rem;
+	font-weight: bold;
+	color: #ffffff;
 }
 
 nav ul {
-  list-style: none;
-  display: flex;
-  gap: 1.5rem;
+	list-style: none;
+	display: flex;
+	gap: 1.5rem;
 }
 
 nav a {
-  text-decoration: none;
-  color: #ffffff;
-  font-weight: 600;
-  transition: color 0.3s;
+	text-decoration: none;
+	color: #ffffff;
+	font-weight: 600;
+	transition: color 0.3s;
 }
 
 nav a:hover {
-  color: #444;
+	color: #444;
 }
 
 /* Секції */
 section {
-  padding: 4rem 2rem;
-  background-color: var(--bg-light);
-  margin-bottom: 2rem;
-  border-radius: 12px;
-  width: 90%;
-  max-width: 1000px;
-  margin-left: auto;
-  margin-right: auto;
+	padding: 4rem 2rem;
+	background-color: var(--bg-light);
+	margin-bottom: 2rem;
+	border-radius: 12px;
+	width: 90%;
+	max-width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-  color: #222;
+	font-size: 2rem;
+	margin-bottom: 1rem;
+	color: #222;
 }
 
 .highlight {
-  font-size: 1.2rem;
-  font-style: italic;
-  margin-bottom: 1.5rem;
+	font-size: 1.2rem;
+	font-style: italic;
+	margin-bottom: 1.5rem;
 }
 
 /* Oferta */
 .services {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1rem;
-  margin-top: 1rem;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 1rem;
+	margin-top: 1rem;
 }
 
 .service {
-  background-color: #fff;
-  padding: 1rem;
-  border-left: 5px solid var(--accent);
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+	background-color: #fff;
+	padding: 1rem;
+	border-left: 5px solid var(--accent);
+	border-radius: 8px;
+	box-shadow: 0 2px 4px rgba(0,0,0,0.05);
 }
 
 /* Kontakt */
 #kontakt p {
-  margin-bottom: 0.8rem;
+	margin-bottom: 0.8rem;
 }
 
 /* Footer */
 footer {
-  text-align: center;
-  padding: 1.5rem;
-  font-size: 0.9rem;
-  background-color: var(--accent);
-  color: #ffffff;
+	text-align: center;
+	padding: 1.5rem;
+	font-size: 0.9rem;
+	background-color: var(--accent);
+	color: #ffffff;
 }
