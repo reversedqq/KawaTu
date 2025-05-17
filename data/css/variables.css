@@ -1,0 +1,9 @@
+:root {
+	--bg-main: #FFFFFF;
+	--bg-light: #FFEED8;
+	--accent: #442808;
+	--text-dark: #333;
+	--border-radius: .25rem;
+	
+	--breezeum-border-radius: var(--border-radius);
+}

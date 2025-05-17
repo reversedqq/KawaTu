@@ -1,0 +1,10 @@
+.section {
+	padding: 4rem 2rem;
+	background-color: var(--bg-light);
+	margin-bottom: 2rem;
+	border-radius: var(--border-radius);
+	width: 90%;
+	max-width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+}

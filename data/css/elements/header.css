@@ -1,0 +1,35 @@
+.header {
+	background-color: var(--accent);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1.2rem 2rem;
+	position: sticky;
+	top: 0;
+	z-index: 1000;
+	box-shadow: 0 .1rem .25rem rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+	font-size: 1.8rem;
+	font-weight: bold;
+	color: #ffffff;
+}
+
+nav ul {
+	list-style: none;
+	display: flex;
+	gap: 1.5rem;
+}
+
+nav a {
+	text-decoration: none;
+	color: #ffffff;
+	font-weight: 600;
+	transition: color .3s;
+	cursor: pointer;
+}
+
+nav a:hover {
+	color: #a1a1a1;
+}

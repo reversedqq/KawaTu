@@ -1,0 +1,41 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Segoe UI', sans-serif;
+	background-color: var(--bg-main);
+	color: var(--text-dark);
+	line-height: 1.6;
+}
+
+h2 {
+	font-size: 2rem;
+	margin-bottom: 1rem;
+	color: #222;
+}
+
+@media screen and (max-width: 1024px) {
+	.photos {
+		flex-wrap: wrap;
+	}
+
+	.services {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.photos img {
+		width: calc(50% - .5rem);
+	}
+
+	.contacts {
+		flex-direction: column;
+	}
+
+	.contacts .right iframe {
+		width: 100%;
+	}
+}

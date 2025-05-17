@@ -1,0 +1,37 @@
+.contacts {
+	display: flex;
+	justify-content: space-between;
+	justify-items: center;
+}
+
+.contacts .right iframe {
+	width: 20rem;
+	aspect-ratio: 1/1;
+	border-radius: var(--border-radius);
+}
+
+.contacts a {
+	text-decoration: none;
+	color: rgb(136, 26, 26);
+	transition: color .2s ease;
+}
+
+.contacts a:hover {
+	color: rgb(231, 43, 43);
+}
+
+.contacts span {
+	display: flex;
+	gap: .25rem;
+	margin-bottom: .8rem;
+}
+
+@media screen and (max-width: 1024px) {
+	.contacts {
+		flex-direction: column;
+	}
+
+	.contacts .right iframe {
+		width: 100%;
+	}
+}

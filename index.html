@@ -1,75 +1,125 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="en">
 
 <head>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>KawaTu – Twoja kawa, Twoje miejsce</title>
-	<link rel="stylesheet" href="style.css" />
+	<meta name="description"
+		content="KawaTu is a cozy coffee spot in Lublin offering high-quality drinks, fresh pastries, and a relaxing atmosphere.">
+
+	<title>KawaTu – Your coffee, your place</title>
+
+	<!-- Modules -->
+	<script src="https://cdn.jsdelivr.net/gh/OrakomoRi/Breezium@latest/modules/BreeziumSelect/js/BreeziumSelect.min.js"
+		defer></script>
+	<link rel="stylesheet"
+		href="https://cdn.jsdelivr.net/gh/OrakomoRi/Breezium@latest/modules/BreeziumSelect/css/BreeziumSelect.min.css">
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="data/css/style.css" />
+	<link rel="stylesheet" href="data/css/reset.css" />
+
+	<!-- JS -->
+	<script src="data/js/scroll.js" defer></script>
+	<script src="data/js/translations.js" defer></script>
 </head>
 
 <body>
-	<header>
-		<div class="logo">KawaTu</div>
+	<header class="header">
+		<div class="logo" data-i18n="KawaTu">KawaTu</div>
 		<nav>
 			<ul>
-				<li><a href="#onas">O nas</a></li>
-				<li><a href="#oferta">Oferta</a></li>
-				<li><a href="#kontakt">Kontakt</a></li>
+				<li><a href="/" class="navigation-link" data-section="about" data-i18n="About Us">About Us</a></li>
+				<li><a href="/" class="navigation-link" data-section="offer" data-i18n="Offer">Offer</a></li>
+				<li><a href="/" class="navigation-link" data-section="contacts" data-i18n="Contact Us">Contact</a></li>
 			</ul>
 		</nav>
+		<div data-lang-select></div>
 	</header>
 
-	<section id="onas" class="about">
-		<h2>O nas</h2>
-		<p class="highlight">
-			Nasza wizja to stworzenie miejsca, w którym każdy może znaleźć swój idealny moment przy filiżance kawy.
-			KawaTu to przestrzeń relaksu, inspiracji i dobrych relacji.
+	<section class="section about" data-section="about">
+		<h2 data-i18n="About Us">About Us</h2>
+		<p class="highlight"
+			data-i18n="Our vision is to create a place where everyone can find their perfect moment with a cup of coffee. KawaTu is a space of relaxation, inspiration, and good relationships.">
+			Our vision is to create a place where everyone can find their perfect moment with a cup of coffee. KawaTu is
+			a space of relaxation, inspiration, and good relationships.
 		</p>
-		<p>
-			Nasza misja to oferowanie najwyższej jakości napojów kawowych i wypieków, tworzonych z pasją i dbałością o
-			detale. Stawiamy na indywidualne podejście, lokalnych dostawców i przytulną atmosferę.
+		<p
+			data-i18n="Our mission is to offer top-quality coffee beverages and pastries, made with passion and attention to detail. We focus on individual approach, local suppliers, and cozy atmosphere.">
+			Our mission is to offer top-quality coffee beverages and pastries, made with passion and attention to
+			detail. We focus on individual approach, local suppliers, and cozy atmosphere.
 		</p>
 	</section>
 
-	<section id="oferta" class="offer">
-		<h2>Oferta</h2>
+	<section class="section offer" data-section="offer">
+		<h2 data-i18n="Offer">Offer</h2>
 		<div class="services">
-			<div class="service">☕ Wysokiej jakości kawa i herbata</div>
-			<div class="service">🍰 Świeże, domowe wypieki (także wegańskie)</div>
-			<div class="service">❄️ Sezonowe napoje zimowe i letnie</div>
-			<div class="service">📦 Ekologiczne opakowania na wynos</div>
-			<div class="service">🎉 Wydarzenia tematyczne i degustacje</div>
+			<div class="service">
+				<span>☕</span>
+				<p data-i18n="High-quality coffee and tea">High-quality coffee and tea</p>
+			</div>
+			<div class="service">
+				<span>🍰</span>
+				<p data-i18n="Fresh homemade pastries (including vegan)">Fresh homemade pastries
+					(including vegan)</p>
+			</div>
+			<div class="service">
+				<span>❄️</span>
+				<p data-i18n="Seasonal winter and summer drinks">Seasonal winter and summer drinks</p>
+			</div>
+			<div class="service">
+				<span>📦</span>
+				<p data-i18n="Eco-friendly takeaway packaging">Eco-friendly takeaway packaging</p>
+			</div>
+			<div class="service">
+				<span>🎉</span>
+				<p data-i18n="Themed events and tastings">Themed events and tastings</p>
+			</div>
 		</div>
 		<div class="photos">
-			<img src="images/1.webp" alt="">
-			<img src="images/2.webp" alt="">
-			<img src="images/3.webp" alt="">
-			<img src="images/4.webp" alt="">
-			<img src="images/5.webp" alt="">
+			<img src="data/images/1.webp" alt="">
+			<img src="data/images/2.webp" alt="">
+			<img src="data/images/3.webp" alt="">
+			<img src="data/images/4.webp" alt="">
+			<img src="data/images/5.webp" alt="">
 		</div>
 	</section>
 
-	<section id="kontakt" class="contacts">
+	<section class="section contacts" data-section="contacts">
 		<div class="left">
-			<h2>Kontakt</h2>
-			<p><strong>Adres:</strong> ul. Spokojna 11b, Lublin</p>
-			<p><strong>Email:</strong> feedback.kawatu@gmail.com</p>
-			<p><strong>Telefon:</strong> +48 789 987 234</p>
-			<p><strong>Godziny otwarcia:</strong><br>
-				pn.–pt.: 8:00–20:00<br>
-				sob.–nd.: 9:00–22:00</p>
+			<h2 data-i18n="Contact Us">Contact Us</h2>
+			<span>
+				<p data-i18n="Address:" class="bold">Address:</p>
+				<p data-i18n="ul. Spokojna 11b, Lublin">ul. Spokojna 11b, Lublin</p>
+			</span>
+			<span>
+				<p data-i18n="Email:" class="bold">Email:</p>
+				<a href="mailto:feedback.kawatu@gmail.com"
+					data-i18n="feedback.kawatu@gmail.com">feedback.kawatu@gmail.com</a>
+			</span>
+			<span>
+				<p data-i18n="Phone:" class="bold">Phone:</p>
+				<a href="tel:+48 789 987 234" data-i18n="+48 789 987 234">+48 789 987 234</a>
+			</span>
+			<span>
+				<p data-i18n="Opening hours:" class="bold">Opening hours</p>
+				<p data-i18n="Mon–Fri: 8:00–20:00">Mon–Fri: 8:00–20:00</p>
+				<p>/</p>
+				<p data-i18n="Sat–Sun: 9:00–22:00">Sat–Sun: 9:00–22:00</p>
+			</span>
 		</div>
 		<div class="right">
-			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d857.7658396681277!2d22.553106522448576!3d51.25187456235161!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4722575d88d83835%3A0x3f413fc645417866!2sSpokojna%2011%2C%2020-400%20Lublin%2C%20Poland!5e0!3m2!1sen!2slv!4v1747255637838!5m2!1sen!2slv" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+			<iframe
+				title="Google map showing location of KawaTu"
+				src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d857.7658396681277!2d22.553106522448576!3d51.25187456235161!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4722575d88d83835%3A0x3f413fc645417866!2sSpokojna%2011%2C%2020-400%20Lublin%2C%20Poland!5e0!3m2!1sen!2slv!4v1747255637838!5m2!1sen!2slv"
+				style="border:0;" allowfullscreen="" loading="lazy"
+				referrerpolicy="no-referrer-when-downgrade"></iframe>
 		</div>
 	</section>
 
-	<footer>
-		© 2025 KawaTu. Wszelkie prawa zastrzeżone.
+	<footer class="footer">
+		<p data-i18n="&copy; 2025 KawaTu. All rights reserved.">&copy; 2025 KawaTu. All rights reserved.</p>
 	</footer>
-
-	<script src="script.js"></script>
 </body>
 
 </html>
