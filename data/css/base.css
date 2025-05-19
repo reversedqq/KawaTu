@@ -5,9 +5,9 @@
 }
 
 body {
-	font-family: 'Segoe UI', sans-serif;
-	background-color: var(--bg-main);
-	color: var(--text-dark);
+	font-family: 'Inter', sans-serif;
+	background-color: var(--background-light);
+	color: var(--text-light);
 	line-height: 1.6;
 }
 

@@ -9,7 +9,7 @@
 .service {
 	display: flex;
 	gap: .25rem;
-	background-color: #fff;
+	background-color: var(--background-dark);
 	padding: 1rem;
 	border-left: .2rem solid var(--accent);
 	border-radius: var(--border-radius);

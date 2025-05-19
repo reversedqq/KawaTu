@@ -1,9 +1,13 @@
 :root {
-	--bg-main: #FFFFFF;
-	--bg-light: #FFEED8;
-	--accent: #442808;
-	--text-dark: #333;
+	--accent: #fac660;
+	--text-light: #ffffff;
+	--text-dark: #202020;
+	--background-light: #ffffff;
+	--background-dark: #2c2c2c;
+
 	--border-radius: .25rem;
+
+	--side-padding: 10rem;
 	
 	--breezium-border-radius: var(--border-radius);
 	--breezium-padding: .25rem .5rem;

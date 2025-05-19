@@ -10,49 +10,56 @@
 	<title data-i18n="KawaTu">KawaTu</title>
 	<link rel="icon" href="data/images/logo.svg" type="image/svg">
 
+	<!-- Fonts -->
+	<link href="https://fonts.googleapis.com/css2?family=Italiana&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Gloock&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
 	<!-- Modules -->
-	<script src="https://cdn.jsdelivr.net/gh/OrakomoRi/Breezium@latest/modules/BreeziumSelect/js/BreeziumSelect.min.js"
-		defer></script>
-	<link rel="stylesheet"
-		href="https://cdn.jsdelivr.net/gh/OrakomoRi/Breezium@latest/modules/BreeziumSelect/css/BreeziumSelect.min.css">
+	<script src="https://cdn.jsdelivr.net/gh/OrakomoRi/Breezium@latest/modules/BreeziumSelect/js/BreeziumSelect.min.js" defer></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/OrakomoRi/Breezium@latest/modules/BreeziumSelect/css/BreeziumSelect.min.css">
 
 	<!-- CSS -->
 	<link rel="stylesheet" href="data/css/style.css" />
 	<link rel="stylesheet" href="data/css/reset.css" />
 
 	<!-- JS -->
+	<script src="data/js/script.js" defer></script>
 	<script src="data/js/scroll.js" defer></script>
 	<script src="data/js/translations.js" defer></script>
 </head>
 
 <body>
 	<header class="header">
-		<div class="logo" data-i18n="KawaTu">KawaTu</div>
+		<div class="logo"><img src="data/images/logo.svg" alt=""><p data-i18n="KawaTu">KawaTu</p></div>
 		<div class="control-panel">
 			<nav>
 				<ul>
-					<li><a href="/" class="navigation-link" data-section="about" data-i18n="About Us">About Us</a></li>
+					<li><a href="/" class="navigation-link" data-section="home" data-i18n="About Us">About Us</a></li>
 					<li><a href="/" class="navigation-link" data-section="offer" data-i18n="Offer">Offer</a></li>
-					<li><a href="/" class="navigation-link" data-section="contacts" data-i18n="Contact Us">Contact</a>
-					</li>
+					<li><a href="/" class="navigation-link" data-section="contacts" data-i18n="Contact Us">Contact</a></li>
 				</ul>
 			</nav>
 			<div data-lang-select></div>
 		</div>
 	</header>
 
-	<section class="section about" data-section="about">
-		<h2 class="section-header" data-i18n="About Us">About Us</h2>
-		<p class="highlight"
-			data-i18n="Our vision is to create a place where everyone can find their perfect moment with a cup of coffee. KawaTu is a space of relaxation, inspiration, and good relationships.">
-			Our vision is to create a place where everyone can find their perfect moment with a cup of coffee. KawaTu is
-			a space of relaxation, inspiration, and good relationships.
-		</p>
-		<p
-			data-i18n="Our mission is to offer top-quality coffee beverages and pastries, made with passion and attention to detail. We focus on individual approach, local suppliers, and cozy atmosphere.">
-			Our mission is to offer top-quality coffee beverages and pastries, made with passion and attention to
-			detail. We focus on individual approach, local suppliers, and cozy atmosphere.
-		</p>
+	<section class="section home" data-section="home">
+		<div class="slogan">
+			<div>
+				<p>Your perfect&nbsp;</p>
+				<span>pause</span>
+				<p>,&nbsp;</p>
+			</div>
+			<div>
+				<p>in every&nbsp;</p>
+				<span>cup</span>
+			</div>
+		</div>
+		<div class="home-buttons">
+			<button class="filled">Get coffee</button>
+			<button class="outline">Contacts</button>
+		</div>
 	</section>
 
 	<section class="section offer" data-section="offer">
