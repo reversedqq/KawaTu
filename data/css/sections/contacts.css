@@ -20,7 +20,7 @@
 
 .contacts .left,
 .contacts .right {
-	width: fit-content;
+	width: calc(50% - var(--side-padding));
 }
 
 .contacts .right iframe {
