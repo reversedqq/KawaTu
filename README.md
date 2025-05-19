@@ -4,7 +4,7 @@ KawaTu is a clean and elegant multi-language landing page designed for a local c
 
 ## :sparkles: Features
 
-- :earth_africa: Multi-language support (EN / RU / PL)
+- :earth_africa: Multi-language support (EN / PL)
 - :iphone: Responsive layout with mobile-first design
 - :herb: CSS modular structure by components
 - :repeat: Smooth section-based navigation
