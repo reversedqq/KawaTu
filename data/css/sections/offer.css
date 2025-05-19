@@ -96,7 +96,11 @@
 }
 
 @media (max-width: 768px) {
+	.offer .section__title {
+		font-size: 1.75rem;
+	}
+
 	.image-wrapper {
-		width: 40%;
+		width: 30%;
 	}
 }
