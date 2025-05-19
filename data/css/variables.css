@@ -4,13 +4,29 @@
 	--text-dark: #202020;
 	--background-light: #ffffff;
 	--background-dark: #2c2c2c;
+	--background-gray: #aaaaaa;
+	--scroll-thumb: rgba(0, 0, 0, .3);
 
 	--border-radius: .25rem;
 
 	--side-padding: 10rem;
-	
+
+	--background-lines-gap: 20rem;
+	--background-lines: repeating-linear-gradient(to right,
+			rgba(255, 255, 255, 0) 0,
+			rgba(255, 255, 255, .05) .1rem,
+			transparent .1rem,
+			transparent var(--background-lines-gap));
+
 	--breezium-border-radius: var(--border-radius);
 	--breezium-padding: .25rem .5rem;
 	--breezium-select-selected-width: fit-content;
 	--breezium-select-option-height: fit-content;
+}
+
+@media screen and (max-width: 1024px) {
+	:root {
+		--side-padding: 1rem;
+		--background-lines-gap: 10rem;
+	}
 }

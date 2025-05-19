@@ -1,34 +1,91 @@
 .contacts {
-	display: flex;
+	min-height: 70vh;
+	background-color: var(--background-light);
+	color: var(--text-dark);
+}
+
+.contacts .section__inner {
+	flex-direction: row;
 	justify-content: space-between;
 	justify-items: center;
+	width: 100%;
+	gap: 2rem;
+}
+
+.contacts .left {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+}
+
+.contacts .left,
+.contacts .right {
+	width: fit-content;
 }
 
 .contacts .right iframe {
-	width: 20rem;
+	width: 100%;
 	aspect-ratio: 1/1;
 	border-radius: var(--border-radius);
 }
 
-.contacts a {
-	text-decoration: none;
-	color: rgb(136, 26, 26);
-	transition: color .2s ease;
-}
-
-.contacts a:hover {
-	color: rgb(231, 43, 43);
-}
-
-.contacts span {
+.contact-items {
 	display: flex;
+	flex-direction: column;
+	gap: .5rem;
+}
+
+.contact-items .item {
+	display: flex;
+	flex-direction: column;
 	gap: .25rem;
-	margin-bottom: .8rem;
+}
+
+.contact-items .item .title {
+	font-family: 'Inter', sans-serif;
+	font-size: 1.5rem;
+	font-weight: bold;
+	line-height: 1.6;
+	letter-spacing: .05rem;
+}
+
+.contact-items .item a {
+	width: fit-content;
+	position: relative;
+	text-decoration: none;
+	color: var(--text-dark);
+	filter: invert(.25);
+	transition: filter .2s ease;
+}
+
+.contact-items .item a:hover {
+	filter: none;
+}
+
+.contact-items .item a::after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 0;
+	height: .2rem;
+	background-color: transparent;
+	transition: width .2s ease;
+}
+
+.contact-items .item a:hover::after {
+	width: 100%;
+	background-color: var(--text-dark);
 }
 
 @media screen and (max-width: 1024px) {
-	.contacts {
+	.contacts .section__inner {
 		flex-direction: column;
+	}
+
+	.contacts .left,
+	.contacts .right {
+		width: 90%;
 	}
 
 	.contacts .right iframe {

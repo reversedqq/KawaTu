@@ -5,10 +5,11 @@
 /* Text styles */
 
 @import url('/data/css/text/paragraph.css');
-@import url('/data/css/text/header.css');
+@import url('/data/css/text/span.css');
 
 /* Elements styles */
 
+@import url('/data/css/elements/logo.css');
 @import url('/data/css/elements/header.css');
 @import url('/data/css/elements/footer.css');
 @import url('/data/css/elements/select.css');
@@ -16,7 +17,9 @@
 
 /* Section styles */
 
+@import url('/data/css/sections/image-placeholder.css');
 @import url('/data/css/sections/home.css');
+@import url('/data/css/sections/statistics.css');
 @import url('/data/css/sections/offer.css');
 @import url('/data/css/sections/contacts.css');
 

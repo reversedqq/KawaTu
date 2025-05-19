@@ -1,5 +1,5 @@
-document.querySelectorAll('.navigation-link').forEach(anchor => {
-	anchor.addEventListener("click", function (e) {
+document.querySelectorAll('.navigation__link').forEach(anchor => {
+	anchor.addEventListener('click', function (e) {
 		e.preventDefault();
 		const targetSection = this.getAttribute('data-section');
 		const target = document.querySelector(`.section[data-section="${targetSection}"]`);

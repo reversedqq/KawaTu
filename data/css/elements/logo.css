@@ -1,0 +1,32 @@
+.logo {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 1rem;
+	cursor: pointer;
+}
+
+.logo img {
+	width: 3rem;
+	aspect-ratio: 1/1;
+	user-select: none;
+	transition: transform .2s ease;
+}
+
+.logo:hover img {
+	transform: rotate(20deg);
+}
+
+.logo p {
+	font-family: 'Gloock', serif;
+	font-size: 2rem;
+	color: var(--accent);
+	letter-spacing: .03em;
+	text-shadow: .1rem .1rem .2rem var(--background-dark);
+	user-select: none;
+	transition: filter .2s ease;
+}
+
+.logo:hover p {
+	filter: brightness(1.25);
+}

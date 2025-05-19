@@ -1,41 +1,9 @@
 .home {
-	position: relative;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
+	min-height: 50vh;
+}
+
+.home .section__inner {
 	gap: 5rem;
-	background: var(--background-dark);
-	overflow: hidden;
-	min-height: 70vh;
-}
-
-.home::before {
-	content: '';
-	position: absolute;
-	inset: 0;
-	background-image: repeating-linear-gradient(to right,
-			rgba(255, 255, 255, 0) 0,
-			rgba(255, 255, 255, .05) .1rem,
-			transparent .1rem,
-			transparent 10rem);
-	pointer-events: none;
-	z-index: 0;
-}
-
-.home::after {
-	content: '';
-	position: absolute;
-	bottom: 0;
-	left: 50%;
-	transform: translateX(-50%);
-	width: 100%;
-	height: 150px;
-	background: radial-gradient(ellipse at center bottom,
-			rgba(255, 170, 50, .15),
-			transparent 70%);
-	z-index: 0;
-	pointer-events: none;
 }
 
 .slogan {
@@ -57,12 +25,12 @@
 	color: var(--accent);
 }
 
-.home-buttons {
+.home__buttons {
 	display: flex;
 	gap: 2rem;
 }
 
-.home-buttons button {
+.home__buttons button {
 	padding: .75rem 1.5rem;
 	border: none;
 	border-radius: 9999px;
@@ -72,23 +40,29 @@
 	transition: filter .2s ease, background-color .2s ease, color .2s ease;
 }
 
-.home-buttons button.filled {
+.home__buttons button.filled {
 	background-color: var(--accent);
 	color: var(--text-dark);
 	border: .2rem solid var(--accent);
 }
 
-.home-buttons button.filled:hover {
+.home__buttons button.filled:hover {
 	filter: brightness(1.25);
 }
 
-.home-buttons button.outline {
+.home__buttons button.outline {
 	background-color: var(--background-dark);
 	color: var(--text-light);
 	border: .2rem solid var(--accent);
 }
 
-.home-buttons button.outline:hover {
+.home__buttons button.outline:hover {
 	background-color: var(--accent);
 	color: var(--text-dark);
+}
+
+@media screen and (max-width: 1024px) {
+	.slogan {
+		font-size: 3rem;
+	}
 }

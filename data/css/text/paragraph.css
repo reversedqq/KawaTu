@@ -1,9 +1,7 @@
-.highlight {
-	font-size: 1.2rem;
+p.italic {
 	font-style: italic;
-	margin-bottom: 1.5rem;
 }
 
-.bold {
+p.bold {
 	font-weight: bold;
 }

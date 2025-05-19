@@ -9,48 +9,17 @@
 	background: var(--background-dark);
 }
 
+.header.scrolled {
+	border-bottom: .1rem solid var(--accent);
+}
+
 .header::before {
 	content: '';
 	position: absolute;
 	inset: 0;
-	background-image: repeating-linear-gradient(to right,
-			rgba(255, 255, 255, 0) 0,
-			rgba(255, 255, 255, .05) .1rem,
-			transparent .1rem,
-			transparent 10rem);
+	background-image: var(--background-lines);
 	pointer-events: none;
 	z-index: 0;
-}
-
-.logo {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	gap: 1rem;
-	cursor: pointer;
-}
-
-.logo img {
-	width: 3rem;
-	aspect-ratio: 1/1;
-	transition: transform .2s ease;
-}
-
-.logo:hover img {
-	transform: rotate(20deg);
-}
-
-.logo p {
-	font-family: 'Gloock', serif;
-	font-size: 2rem;
-	color: var(--accent);
-	letter-spacing: .03em;
-	user-select: none;
-	transition: filter .2s ease;
-}
-
-.logo:hover p {
-	filter: brightness(1.25);
 }
 
 .header nav ul {
@@ -67,10 +36,16 @@
 	font-weight: 600;
 	transition: color .2s;
 	cursor: pointer;
+	user-select: none;
 }
 
 .header nav a:hover {
 	color: var(--accent);
+}
+
+.header nav a.active {
+	color: var(--accent);
+	pointer-events: none;
 }
 
 .control-panel {
@@ -78,4 +53,10 @@
 	align-items: center;
 	justify-content: center;
 	gap: 2rem;
+}
+
+@media screen and (max-width: 1024px) {
+	.header nav {
+		display: none;
+	}
 }
