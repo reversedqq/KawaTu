@@ -94,3 +94,9 @@
 		border-width: .2rem;
 	}
 }
+
+@media (max-width: 768px) {
+	.image-wrapper {
+		width: 40%;
+	}
+}
