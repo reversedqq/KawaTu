@@ -9,4 +9,5 @@
 .breezium-select .breezium-selected,
 .breezium-select .breezium-option {
 	text-transform: uppercase;
+	font-size: var(--breezium-font-size);
 }

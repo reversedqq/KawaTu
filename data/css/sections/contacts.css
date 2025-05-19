@@ -88,6 +88,16 @@
 		width: 90%;
 	}
 
+	.contacts .left {
+		align-items: center;
+		justify-content: center;
+	}
+
+	.contact-items .item {
+		align-items: center;
+		justify-content: center;
+	}
+
 	.contacts .right iframe {
 		width: 100%;
 	}
