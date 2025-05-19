@@ -48,7 +48,7 @@
 
 @media screen and (max-width: 1024px) {
 	.section {
-		padding: 2rem var(--side-padding);
+		padding: 2.5rem var(--side-padding);
 	}
 
 	.section__inner {
