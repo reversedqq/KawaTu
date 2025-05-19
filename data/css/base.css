@@ -11,12 +11,6 @@ body {
 	line-height: 1.6;
 }
 
-h2 {
-	font-size: 2rem;
-	margin-bottom: 1rem;
-	color: #222;
-}
-
 @media screen and (max-width: 1024px) {
 	.photos {
 		flex-wrap: wrap;

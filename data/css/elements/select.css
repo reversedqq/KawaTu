@@ -1,3 +1,12 @@
 [data-lang-select] {
 	max-width: max-content;
 }
+
+.breezium-select .breezium-selected {
+	min-width: 4rem;
+}
+
+.breezium-select .breezium-selected,
+.breezium-select .breezium-option {
+	text-transform: uppercase;
+}
