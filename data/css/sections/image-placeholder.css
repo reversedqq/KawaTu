@@ -1,0 +1,72 @@
+.image-placeholder {
+	height: 70vh;
+	position: relative;
+	overflow: hidden;
+}
+
+.image-placeholder .top,
+.image-placeholder .bottom {
+	height: 50%;
+}
+
+.image-placeholder .top {
+	position: relative;
+	background: var(--background-dark);
+}
+
+.image-placeholder .top::before {
+	content: '';
+	position: absolute;
+	inset: 0;
+	background-image: var(--background-lines);
+	pointer-events: none;
+	z-index: 0;
+}
+
+.image-placeholder .top::after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 100%;
+	height: 150px;
+	background: radial-gradient(ellipse at center bottom,
+			rgba(255, 170, 50, .15),
+			transparent 70%);
+	z-index: 0;
+	pointer-events: none;
+}
+
+.image-placeholder .bottom {
+	background: var(--background-light);
+}
+
+.image-placeholder .image-container {
+	width: 50%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	aspect-ratio: 16 / 9;
+	border-radius: 2.5rem;
+	overflow: hidden;
+}
+
+.image-placeholder .image-container img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	position: static;
+	filter: brightness(.75);
+}
+
+@media screen and (max-width: 1024px) {
+	.image-placeholder {
+		height: 50vh;
+	}
+
+	.image-placeholder .image-container {
+		width: 75%;
+	}
+}

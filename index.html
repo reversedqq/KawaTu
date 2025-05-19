@@ -1,75 +1,333 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="en">
 
 <head>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>KawaTu – Twoja kawa, Twoje miejsce</title>
-	<link rel="stylesheet" href="style.css" />
+	<meta name="description"
+		content="KawaTu is a cozy coffee spot in Lublin offering high-quality drinks, fresh pastries, and a relaxing atmosphere.">
+
+	<title>KawaTu</title>
+	<link rel="icon" href="data/images/logo.svg" type="image/svg">
+
+	<!-- Fonts -->
+	<link
+		href="https://fonts.googleapis.com/css2?family=Italiana&family=Inter:wght@400;500;600;700&family=Gloock&display=swap"
+		rel="stylesheet">
+
+	<!-- Modules -->
+	<script src="https://cdn.jsdelivr.net/gh/OrakomoRi/Breezium@latest/modules/BreeziumSelect/js/BreeziumSelect.min.js"
+		defer></script>
+	<link rel="stylesheet"
+		href="https://cdn.jsdelivr.net/gh/OrakomoRi/Breezium@latest/modules/BreeziumSelect/css/BreeziumSelect.min.css">
+
+	<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="data/css/style.css" />
+	<link rel="stylesheet" href="data/css/reset.css" />
+
+	<!-- JS -->
+	<script src="data/js/script.js" defer></script>
+	<script src="data/js/scroll.js" defer></script>
+	<script src="data/js/header.js" defer></script>
+	<script src="data/js/translations.js" defer></script>
 </head>
 
 <body>
-	<header>
-		<div class="logo">KawaTu</div>
-		<nav>
-			<ul>
-				<li><a href="#onas">O nas</a></li>
-				<li><a href="#oferta">Oferta</a></li>
-				<li><a href="#kontakt">Kontakt</a></li>
-			</ul>
-		</nav>
+	<header class="header">
+		<div class="logo">
+			<img src="data/images/logo.svg" alt="">
+			<p>KawaTu</p>
+		</div>
+
+		<div class="control-panel">
+			<nav>
+				<ul>
+					<li><a href="/" class="navigation__link" data-section="home" data-i18n="Home">Home</a></li>
+					<li><a href="/" class="navigation__link" data-section="statistics" data-i18n="Statistics">Statistics</a></li>
+					<li><a href="/" class="navigation__link" data-section="offer" data-i18n="Offer">Offer</a></li>
+					<li><a href="/" class="navigation__link" data-section="contacts" data-i18n="Contacts">Contacts</a>
+					</li>
+				</ul>
+			</nav>
+			<div data-lang-select></div>
+		</div>
 	</header>
 
-	<section id="onas" class="about">
-		<h2>O nas</h2>
-		<p class="highlight">
-			Nasza wizja to stworzenie miejsca, w którym każdy może znaleźć swój idealny moment przy filiżance kawy.
-			KawaTu to przestrzeń relaksu, inspiracji i dobrych relacji.
-		</p>
-		<p>
-			Nasza misja to oferowanie najwyższej jakości napojów kawowych i wypieków, tworzonych z pasją i dbałością o
-			detale. Stawiamy na indywidualne podejście, lokalnych dostawców i przytulną atmosferę.
-		</p>
-	</section>
+	<main>
+		<section class="section dark home" data-section="home">
+			<div class="section__inner">
+				<div class="slogan">
+					<div>
+						<p data-i18n="Your perfect">Your perfect</p>
+						<p>&nbsp;</p>
+						<span class="highlight" data-i18n="pause">pause</span>
+						<p>,</p>
+					</div>
 
-	<section id="oferta" class="offer">
-		<h2>Oferta</h2>
-		<div class="services">
-			<div class="service">☕ Wysokiej jakości kawa i herbata</div>
-			<div class="service">🍰 Świeże, domowe wypieki (także wegańskie)</div>
-			<div class="service">❄️ Sezonowe napoje zimowe i letnie</div>
-			<div class="service">📦 Ekologiczne opakowania na wynos</div>
-			<div class="service">🎉 Wydarzenia tematyczne i degustacje</div>
-		</div>
-		<div class="photos">
-			<img src="images/1.webp" alt="">
-			<img src="images/2.webp" alt="">
-			<img src="images/3.webp" alt="">
-			<img src="images/4.webp" alt="">
-			<img src="images/5.webp" alt="">
-		</div>
-	</section>
+					<div>
+						<p data-i18n="in every">in every</p>
+						<p>&nbsp;</p>
+						<span class="highlight" data-i18n="cup">cup</span>
+					</div>
+				</div>
 
-	<section id="kontakt" class="contacts">
-		<div class="left">
-			<h2>Kontakt</h2>
-			<p><strong>Adres:</strong> ul. Spokojna 11b, Lublin</p>
-			<p><strong>Email:</strong> feedback.kawatu@gmail.com</p>
-			<p><strong>Telefon:</strong> +48 789 987 234</p>
-			<p><strong>Godziny otwarcia:</strong><br>
-				pn.–pt.: 8:00–20:00<br>
-				sob.–nd.: 9:00–22:00</p>
-		</div>
-		<div class="right">
-			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d857.7658396681277!2d22.553106522448576!3d51.25187456235161!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4722575d88d83835%3A0x3f413fc645417866!2sSpokojna%2011%2C%2020-400%20Lublin%2C%20Poland!5e0!3m2!1sen!2slv!4v1747255637838!5m2!1sen!2slv" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-		</div>
-	</section>
+				<div class="home__buttons">
+					<button class="filled" data-i18n="Get coffee">Get coffee</button>
+					<button class="outline contacts-button" data-i18n="Contacts">Contacts</button>
+				</div>
+			</div>
+		</section>
 
-	<footer>
-		© 2025 KawaTu. Wszelkie prawa zastrzeżone.
+		<div class="image-placeholder">
+			<div class="top"></div>
+			<div class="image-container">
+				<img src="data/images/backgrounds/coffee-shop.webp" alt="Coffee Shop">
+			</div>
+			<div class="bottom"></div>
+		</div>
+
+		<section class="section statistics" data-section="statistics">
+			<div class="section__inner">
+				<h2 class="section__title" data-i18n="Consistent Quality, Trusted by Our Community">Consistent Quality, Trusted by Our Community</h2>
+
+				<h4 class="section__subtitle" data-i18n="Great taste, warm service, and mindful sourcing — that’s what makes KawaTu a place people return to.">
+					Great taste, warm service, and mindful sourcing — that’s what makes KawaTu a place people return to.
+				</h4>
+
+				<div class="statistics__grid">
+					<div class="statistics__item">
+						<p class="statistics__text" data-i18n="Visitors highlight the warm atmosphere and personal approach as key reasons for coming back.">
+							Visitors highlight the warm atmosphere and personal approach as key reasons for coming back.
+						</p>
+						<p class="statistics__value">94%</p>
+					</div>
+
+					<div class="statistics__item">
+						<p class="statistics__text" data-i18n="High percentage of our ingredients come from local roasters and bakers who share our values.">
+							High percentage of our ingredients come from local roasters and bakers who share our values.
+						</p>
+						<p class="statistics__value">80%</p>
+					</div>
+
+					<div class="statistics__item">
+						<p class="statistics__text" data-i18n="KawaTu is rated among the top cozy cafes in the region by community review platforms.">
+							KawaTu is rated among the top cozy cafes in the region by community review platforms.
+						</p>
+						<p class="statistics__value">4.9</p>
+					</div>
+				</div>
+
+				<a href="/" class="more-details">
+					<span>-></span>
+					<p data-i18n="More about our values">More about our values</p>
+				</a>
+			</div>
+		</section>
+
+		<section class="section dark offer" data-section="offer">
+			<div class="section__inner">
+				<div>
+					<h2 class="section__title">
+						<span class="highlight" data-i18n="A cozy">A cozy</span>
+						<p>&nbsp;</p>
+						<p data-i18n="space with">space with</p>
+					</h2>
+
+					<h2 class="section__title">
+						<span class="highlight" data-i18n="exceptional">exceptional</span>
+						<p>&nbsp;</p>
+						<p data-i18n="coffee and treats">coffee and treats</p>
+					</h2>
+				</div>
+
+				<!-- 1 -->
+				<div class="offer__item">
+					<div class="image-wrapper">
+						<img src="data/images/offer/1.webp" alt="Espresso">
+						<div class="image-border"></div>
+					</div>
+
+					<div class="text-block">
+						<h4 class="title">
+							<span class="highlight" data-i18n="Espresso">Espresso</span>
+						</h4>
+
+						<p class="offer__text"
+						data-i18n="Espresso is the bold foundation of our menu. Rich, intense, and timeless, it delivers deep flavor in a small cup. Whether you’re beginning your day or taking a midday pause, our espresso offers a moment of focus and clarity, crafted with precision and care.">
+							Espresso is the bold foundation of our menu. Rich, intense, and timeless, it delivers deep
+							flavor in a small cup. Whether you’re beginning your day or taking a midday pause, our
+							espresso offers a moment of focus and clarity, crafted with precision and care.
+						</p>
+					</div>
+				</div>
+
+				<!-- 2 -->
+				<div class="offer__item reverse">
+					<div class="image-wrapper">
+						<img src="data/images/offer/2.webp" alt="Latte Art">
+						<div class="image-border"></div>
+					</div>
+
+					<div class="text-block">
+						<h4 class="title">
+							<span class="highlight" data-i18n="Latte Art">Latte Art</span>
+						</h4>
+
+						<p class="offer__text"
+						data-i18n="Our latte art is more than just a visual delight — it represents the intention we pour into every drink. Each pattern is a quiet signature of the barista’s craft, blending smooth textures with gentle flavors. It’s a small gesture that adds warmth and personality to your cup.">
+							Our latte art is more than just a visual delight — it represents the intention we pour into
+							every drink. Each pattern is a quiet signature of the barista’s craft, blending smooth
+							textures with gentle flavors. It’s a small gesture that adds warmth and personality to your cup.
+						</p>
+					</div>
+				</div>
+
+				<!-- 3 -->
+				<div class="offer__item">
+					<div class="image-wrapper">
+						<img src="data/images/offer/3.webp" alt="Coffee Beans">
+						<div class="image-border"></div>
+					</div>
+
+					<div class="text-block">
+						<h4 class="title">
+							<span class="highlight" data-i18n="Coffee Beans">Coffee Beans</span>
+						</h4>
+
+						<p class="offer__text"
+						data-i18n="We source our coffee beans from trusted local roasters who share our passion for quality and sustainability. Every batch is selected for its character, roasted with care, and brewed fresh in-house to ensure that each cup tells a story of origin, tradition, and balance.">
+							We source our coffee beans from trusted local roasters who share our passion for quality and
+							sustainability. Every batch is selected for its character, roasted with care, and brewed
+							fresh in-house to ensure that each cup tells a story of origin, tradition, and balance.
+						</p>
+					</div>
+				</div>
+
+				<!-- 4 -->
+				<div class="offer__item reverse">
+					<div class="image-wrapper">
+						<img src="data/images/offer/4.webp" alt="Filter Coffee">
+						<div class="image-border"></div>
+					</div>
+
+					<div class="text-block">
+						<h4 class="title">
+							<span class="highlight" data-i18n="Filter Coffee">Filter Coffee</span>
+						</h4>
+
+						<p class="offer__text"
+						data-i18n="Filter coffee invites you to slow down and enjoy the subtle side of coffee. With its lighter body and complex notes, it’s ideal for thoughtful moments and long conversations. We brew it with patience and consistency, allowing its natural depth to shine through.">
+							Filter coffee invites you to slow down and enjoy the subtle side of coffee. With its lighter
+							body and complex notes, it’s ideal for thoughtful moments and long conversations. We brew it
+							with patience and consistency, allowing its natural depth to shine through.
+						</p>
+					</div>
+				</div>
+
+				<!-- 5 -->
+				<div class="offer__item">
+					<div class="image-wrapper">
+						<img src="data/images/offer/5.webp" alt="Fresh Pastry with Coffee">
+						<div class="image-border"></div>
+					</div>
+
+					<div class="text-block">
+						<h4 class="title">
+							<span class="highlight" data-i18n="Fresh Pastry with Coffee">Fresh Pastry with Coffee</span>
+						</h4>
+
+						<p class="offer__text"
+						data-i18n="A good coffee experience is never complete without something to enjoy alongside it. That’s why we offer a selection of fresh pastries — baked daily in collaboration with local artisans. From flaky croissants to soft cakes, each treat is made to complement your cup and your day.">
+							A good coffee experience is never complete without something to enjoy alongside it. That’s
+							why we offer a selection of fresh pastries — baked daily in collaboration with local
+							artisans. From flaky croissants to soft cakes, each treat is made to complement your cup and
+							your day.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section contacts" data-section="contacts">
+			<div class="section__inner">
+				<div class="left">
+					<h2 class="section__title" data-i18n="Contact Us">Contact Us</h2>
+
+					<div class="contact-items">
+						<div class="item">
+							<h4 data-i18n="Address" class="title">Address</h4>
+							<p data-i18n="ul. Spokojna 11b, Lublin">ul. Spokojna 11b, Lublin</p>
+						</div>
+
+						<div class="item">
+							<h4 data-i18n="Email" class="title">Email</h4>
+							<a href="mailto:feedback.kawatu@gmail.com">feedback.kawatu@gmail.com</a>
+						</div>
+
+						<div class="item">
+							<h4 data-i18n="Phone" class="title">Phone</h4>
+							<a href="tel:+48 789 987 234">+48 789 987 234</a>
+						</div>
+
+						<div class="item">
+							<h4 class="title" data-i18n="Opening hours">Opening hours</h4>
+							<p data-i18n="Mon–Fri: 8:00–20:00">Mon–Fri: 8:00–20:00</p>
+							<p data-i18n="Sat–Sun: 9:00–22:00">Sat–Sun: 9:00–22:00</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="right">
+					<iframe title="Google map showing location of KawaTu"
+						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d857.7658396681277!2d22.553106522448576!3d51.25187456235161!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4722575d88d83835%3A0x3f413fc645417866!2sSpokojna%2011%2C%2020-400%20Lublin%2C%20Poland!5e0!3m2!1sen!2slv!4v1747255637838!5m2!1sen!2slv"
+						style="border:0;" allowfullscreen="" loading="lazy"
+						referrerpolicy="no-referrer-when-downgrade"></iframe>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer class="footer">
+		<div class="top">
+			<p class="footer-disclaimer"
+			data-i18n="This website was designed purely for presentation purposes as part of a portfolio or concept. All content is fictional or used under fair use.">
+				This website was designed purely for presentation purposes as part of a portfolio or concept. All
+				content is fictional or used under fair use.
+			</p>
+
+			<div class="logo">
+				<img src="data/images/logo.svg" alt="">
+				<p>KawaTu</p>
+			</div>
+
+			<div class="links">
+				<a href="/" class="twitter"><ion-icon class="icon" name="logo-twitter"></ion-icon></a>
+				<a href="/" class="instagram"><ion-icon class="icon" name="logo-instagram"></ion-icon></a>
+				<a href="/" class="facebook"><ion-icon class="icon" name="logo-facebook"></ion-icon></a>
+				<a href="/" class="youtube"><ion-icon class="icon" name="logo-youtube"></ion-icon></a>
+			</div>
+		</div>
+
+		<div class="bottom">
+			<div class="copyright">
+				<p>&copy;&nbsp;</p>
+				<p data-i18n="2025 KawaTu. All rights reserved.">2025 KawaTu. All rights reserved.</p>
+			</div>
+
+			<div class="author">
+				<p data-i18n="Made by">Made by</p>
+				<p>&nbsp;</p>
+				<a href="https://github.com/OrakomoRi">
+					<ion-icon name="logo-github"></ion-icon>
+					<p>&nbsp;</p>
+					<p>OrakomoRi</p>
+				</a>
+			</div>
+		</div>
 	</footer>
-
-	<script src="script.js"></script>
 </body>
 
 </html>
