@@ -17,8 +17,8 @@
 
 /* Section styles */
 
-@import url('/data/css/sections/image-placeholder.css');
 @import url('/data/css/sections/home.css');
+@import url('/data/css/sections/image-placeholder.css');
 @import url('/data/css/sections/statistics.css');
 @import url('/data/css/sections/offer.css');
 @import url('/data/css/sections/contacts.css');

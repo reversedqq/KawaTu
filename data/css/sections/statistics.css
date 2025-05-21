@@ -1,5 +1,5 @@
 .statistics {
-	min-height: 70vh;
+	min-height: 50vh;
 	background-color: var(--background-light);
 	color: var(--text-dark);
 }
@@ -38,8 +38,8 @@
 }
 
 .statistics__value {
-	font-family: 'Italiana', serif;
-	font-weight: bold;
+	font-family: 'Marcellus', serif;
+	font-weight: normal;
 	font-size: 1.8rem;
 	color: var(--text-dark);
 }

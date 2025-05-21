@@ -1,15 +1,15 @@
 const LanguageManager = {
-	current: 'en',
+	current: 'pl',
 	translations: {},
 	fallback: {},
 	languages: [],
 
-	async init(defaultLang = 'en') {
+	async init(defaultLang = 'pl') {
 		this.current = localStorage.getItem('language') || defaultLang;
 		this.languages = await this.loadLanguages();
 
-		this.fallback = await this.fetchJSON('en');
-		if (this.current !== 'en') {
+		this.fallback = await this.fetchJSON('pl');
+		if (this.current !== 'pl') {
 			this.translations = await this.fetchJSON(this.current);
 		}
 
@@ -23,7 +23,7 @@ const LanguageManager = {
 			return await res.json();
 		} catch (e) {
 			console.warn('languages.json not found or malformed');
-			return [{ code: 'en', name: 'English' }];
+			return [{ code: 'pl', name: 'Polski' }];
 		}
 	},
 
@@ -71,7 +71,7 @@ const LanguageManager = {
 			async (langCode) => {
 				localStorage.setItem('language', langCode);
 				this.current = langCode;
-				this.translations = langCode === 'en' ? {} : await this.fetchJSON(langCode);
+				this.translations = langCode === 'pl' ? {} : await this.fetchJSON(langCode);
 				await this.translatePage();
 			},
 			defaultOption

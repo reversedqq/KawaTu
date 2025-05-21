@@ -101,6 +101,10 @@
 		width: 90%;
 	}
 
+	.footer .links {
+		justify-content: center;
+	}
+
 	.footer .links a .icon {
 		width: 1rem;
 		height: 1rem;
