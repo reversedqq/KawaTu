@@ -1,5 +1,5 @@
 .image-placeholder {
-	height: 70vh;
+	height: max(50vh, 50vw);
 	position: relative;
 	overflow: hidden;
 }
@@ -44,7 +44,7 @@
 }
 
 .image-placeholder .image-container {
-	width: 50%;
+	height: max(25vh, 25vw);
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -64,10 +64,10 @@
 
 @media screen and (max-width: 1024px) {
 	.image-placeholder {
-		height: 50vh;
+		height: max(40vh, 40vw);
 	}
 
 	.image-placeholder .image-container {
-		width: 75%;
+		height: max(20vh, 20vw);
 	}
 }
