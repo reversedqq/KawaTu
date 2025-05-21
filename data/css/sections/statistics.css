@@ -38,8 +38,8 @@
 }
 
 .statistics__value {
-	font-family: 'Italiana', serif;
-	font-weight: bold;
+	font-family: 'Marcellus', serif;
+	font-weight: normal;
 	font-size: 1.8rem;
 	color: var(--text-dark);
 }
